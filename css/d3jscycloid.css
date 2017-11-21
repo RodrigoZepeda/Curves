@@ -1,0 +1,44 @@
+.orbit {
+    stroke: Crimson;
+    fill: none;
+    stroke-width: 5px;
+  }
+
+.connector{
+    fill: none;
+    stroke: #ccc;
+    stroke-dasharray: 3,3;
+    stroke-width: 5px;
+}  
+
+.rotationaxis{
+    fill: none;
+    stroke: black;
+    stroke-dasharray: 3,3;
+    stroke-width: 5px;
+}
+
+.orbitcircle{
+    stroke: Crimson;
+    fill: Crimson;
+}  
+
+.innercircle{
+    stroke: black;
+    stroke-width: 10px;
+    fill:none;
+}
+
+.outercircle{
+    fill: none;
+    stroke-width: 10px;
+    stroke: #ccc;
+}
+
+.centerin{
+    fill: black;
+}
+
+.centerout{
+    fill: Crimson;
+}
