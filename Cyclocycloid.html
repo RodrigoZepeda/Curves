@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introduction to Random Walks">
+    <meta name="keywords" content="Brownian, Motion, Probability, Stochastic, Process, Markov, Levy, Construction, Wiener">
+    <meta name="author" content="Rodrigo Zepeda Tello">
+
+    <link href="css/bootstrap.css" rel="stylesheet" media = "all">
+    <link href="css/d3jscycloid.css" rel="stylesheet">
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true,
+            },
+            TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+    </script>
+</head>
+
+<body>
+<div class = "panel panel-default">
+            <div class="panel-body">
+                <div class = "row">
+                    <div class="form-group col-lg-9" id = "myfigure" style = "text-align:center;"></div>
+                    <script src="script/Cyclocycloid.js"></script>
+                    <div class="form-group col-lg-2">
+                            <div class = "well">
+                                <label class="control-label" for="inputSmall">Moving radius</label>
+                                <input class="form-control input-sm" type="number" id="rin" min="1" max="250" value = "50">
+                                <label class="control-label" for="inputSmall">Stationary radius</label>
+                                <input class="form-control input-sm" type="number" id="rout" min="1" max="250" value = "150">
+                                <label class="control-label" for="inputSmall">Speed</label>
+                                <input class="form-control input-sm" type="number" id="speed" min="1" max="250" value = "50">
+                                <label class="control-label" for="inputSmall">$d$</label>
+                                <input class="form-control input-sm" type="number" id="d" min="1" max="250" value = "50">
+                                <label class="control-label" for="inputSmall">Granularity (animation)</label>
+                                <input class="form-control input-sm" type="number" id="npoints" min="1" max="1000" value = "100">
+                                <div class="form-group">
+                                        <label>
+                                          <input type="checkbox" id = "axishide" checked> Axis
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id = "innerhide" checked> Stationary circle
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id = "outerhide" checked> Moving circle
+                                        </label>
+                                        <label>
+                                                <input type="checkbox" id = "pointerhide" checked > Pointer
+                                        </label>
+                                </div>
+                                <!--<label class="control-label" for="inputSmall">Maximum number of loops (draw)</label>-->
+                                <!--<input class="form-control input-sm" type="number" id="maxloops" min="1" max="100" value = "5">-->
+                            </div>
+                            <div class = "well text-center">
+                                    <a href="#" class="btn btn-primary btn-sm" id = "pause">Pause</a>
+                                    <a href="#" class="btn btn-warning btn-sm" id = "restart">Restart</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer"><strong>Figure 1</strong> Example of cyclocycloid</div>
+        </div>   
+</body>
